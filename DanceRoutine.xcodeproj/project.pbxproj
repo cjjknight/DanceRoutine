@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3083072C5EF4A700735158 /* DanceRoutineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */; };
+		8B3083092C5EF4A700735158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083082C5EF4A700735158 /* ContentView.swift */; };
+		8B30830B2C5EF4A700735158 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30830A2C5EF4A700735158 /* Item.swift */; };
+		8B30830D2C5EF4A800735158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B30830C2C5EF4A800735158 /* Assets.xcassets */; };
+		8B3083112C5EF4A800735158 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3083102C5EF4A800735158 /* Preview Assets.xcassets */; };
+		8B30831B2C5EF4A800735158 /* DanceRoutineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30831A2C5EF4A800735158 /* DanceRoutineTests.swift */; };
+		8B3083252C5EF4A900735158 /* DanceRoutineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083242C5EF4A900735158 /* DanceRoutineUITests.swift */; };
+		8B3083272C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083262C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B3083172C5EF4A800735158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3082FB2C5EF4A700735158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3083022C5EF4A700735158;
+			remoteInfo = DanceRoutine;
+		};
+		8B3083212C5EF4A900735158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3082FB2C5EF4A700735158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3083022C5EF4A700735158;
+			remoteInfo = DanceRoutine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B3083032C5EF4A700735158 /* DanceRoutine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceRoutine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineApp.swift; sourceTree = "<group>"; };
+		8B3083082C5EF4A700735158 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B30830A2C5EF4A700735158 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8B30830C2C5EF4A800735158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B30830E2C5EF4A800735158 /* DanceRoutine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DanceRoutine.entitlements; sourceTree = "<group>"; };
+		8B3083102C5EF4A800735158 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B3083162C5EF4A800735158 /* DanceRoutineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceRoutineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B30831A2C5EF4A800735158 /* DanceRoutineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineTests.swift; sourceTree = "<group>"; };
+		8B3083202C5EF4A900735158 /* DanceRoutineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceRoutineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3083242C5EF4A900735158 /* DanceRoutineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineUITests.swift; sourceTree = "<group>"; };
+		8B3083262C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B3083002C5EF4A700735158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3083132C5EF4A800735158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B30831D2C5EF4A900735158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B3082FA2C5EF4A700735158 = {
+			isa = PBXGroup;
+			children = (
+				8B3083052C5EF4A700735158 /* DanceRoutine */,
+				8B3083192C5EF4A800735158 /* DanceRoutineTests */,
+				8B3083232C5EF4A900735158 /* DanceRoutineUITests */,
+				8B3083042C5EF4A700735158 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B3083042C5EF4A700735158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B3083032C5EF4A700735158 /* DanceRoutine.app */,
+				8B3083162C5EF4A800735158 /* DanceRoutineTests.xctest */,
+				8B3083202C5EF4A900735158 /* DanceRoutineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B3083052C5EF4A700735158 /* DanceRoutine */ = {
+			isa = PBXGroup;
+			children = (
+				8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */,
+				8B3083082C5EF4A700735158 /* ContentView.swift */,
+				8B30830A2C5EF4A700735158 /* Item.swift */,
+				8B30830C2C5EF4A800735158 /* Assets.xcassets */,
+				8B30830E2C5EF4A800735158 /* DanceRoutine.entitlements */,
+				8B30830F2C5EF4A800735158 /* Preview Content */,
+			);
+			path = DanceRoutine;
+			sourceTree = "<group>";
+		};
+		8B30830F2C5EF4A800735158 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B3083102C5EF4A800735158 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B3083192C5EF4A800735158 /* DanceRoutineTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B30831A2C5EF4A800735158 /* DanceRoutineTests.swift */,
+			);
+			path = DanceRoutineTests;
+			sourceTree = "<group>";
+		};
+		8B3083232C5EF4A900735158 /* DanceRoutineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3083242C5EF4A900735158 /* DanceRoutineUITests.swift */,
+				8B3083262C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift */,
+			);
+			path = DanceRoutineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B3083022C5EF4A700735158 /* DanceRoutine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B30832A2C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutine" */;
+			buildPhases = (
+				8B3082FF2C5EF4A700735158 /* Sources */,
+				8B3083002C5EF4A700735158 /* Frameworks */,
+				8B3083012C5EF4A700735158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DanceRoutine;
+			productName = DanceRoutine;
+			productReference = 8B3083032C5EF4A700735158 /* DanceRoutine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B3083152C5EF4A800735158 /* DanceRoutineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B30832D2C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutineTests" */;
+			buildPhases = (
+				8B3083122C5EF4A800735158 /* Sources */,
+				8B3083132C5EF4A800735158 /* Frameworks */,
+				8B3083142C5EF4A800735158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3083182C5EF4A800735158 /* PBXTargetDependency */,
+			);
+			name = DanceRoutineTests;
+			productName = DanceRoutineTests;
+			productReference = 8B3083162C5EF4A800735158 /* DanceRoutineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B30831F2C5EF4A900735158 /* DanceRoutineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3083302C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutineUITests" */;
+			buildPhases = (
+				8B30831C2C5EF4A900735158 /* Sources */,
+				8B30831D2C5EF4A900735158 /* Frameworks */,
+				8B30831E2C5EF4A900735158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3083222C5EF4A900735158 /* PBXTargetDependency */,
+			);
+			name = DanceRoutineUITests;
+			productName = DanceRoutineUITests;
+			productReference = 8B3083202C5EF4A900735158 /* DanceRoutineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B3082FB2C5EF4A700735158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8B3083022C5EF4A700735158 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8B3083152C5EF4A800735158 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8B3083022C5EF4A700735158;
+					};
+					8B30831F2C5EF4A900735158 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8B3083022C5EF4A700735158;
+					};
+				};
+			};
+			buildConfigurationList = 8B3082FE2C5EF4A700735158 /* Build configuration list for PBXProject "DanceRoutine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B3082FA2C5EF4A700735158;
+			productRefGroup = 8B3083042C5EF4A700735158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B3083022C5EF4A700735158 /* DanceRoutine */,
+				8B3083152C5EF4A800735158 /* DanceRoutineTests */,
+				8B30831F2C5EF4A900735158 /* DanceRoutineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B3083012C5EF4A700735158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3083112C5EF4A800735158 /* Preview Assets.xcassets in Resources */,
+				8B30830D2C5EF4A800735158 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3083142C5EF4A800735158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B30831E2C5EF4A900735158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B3082FF2C5EF4A700735158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3083092C5EF4A700735158 /* ContentView.swift in Sources */,
+				8B30830B2C5EF4A700735158 /* Item.swift in Sources */,
+				8B3083072C5EF4A700735158 /* DanceRoutineApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3083122C5EF4A800735158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B30831B2C5EF4A800735158 /* DanceRoutineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B30831C2C5EF4A900735158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3083252C5EF4A900735158 /* DanceRoutineUITests.swift in Sources */,
+				8B3083272C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B3083182C5EF4A800735158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3083022C5EF4A700735158 /* DanceRoutine */;
+			targetProxy = 8B3083172C5EF4A800735158 /* PBXContainerItemProxy */;
+		};
+		8B3083222C5EF4A900735158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3083022C5EF4A700735158 /* DanceRoutine */;
+			targetProxy = 8B3083212C5EF4A900735158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8B3083282C5EF4A900735158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B3083292C5EF4A900735158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8B30832B2C5EF4A900735158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DanceRoutine/DanceRoutine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DanceRoutine/Preview Content\"";
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B30832C2C5EF4A900735158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DanceRoutine/DanceRoutine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DanceRoutine/Preview Content\"";
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B30832E2C5EF4A900735158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceRoutine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DanceRoutine";
+			};
+			name = Debug;
+		};
+		8B30832F2C5EF4A900735158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceRoutine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DanceRoutine";
+			};
+			name = Release;
+		};
+		8B3083312C5EF4A900735158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DanceRoutine;
+			};
+			name = Debug;
+		};
+		8B3083322C5EF4A900735158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDT29XX2Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CJProtoType.DanceRoutineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DanceRoutine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B3082FE2C5EF4A700735158 /* Build configuration list for PBXProject "DanceRoutine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3083282C5EF4A900735158 /* Debug */,
+				8B3083292C5EF4A900735158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B30832A2C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B30832B2C5EF4A900735158 /* Debug */,
+				8B30832C2C5EF4A900735158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B30832D2C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B30832E2C5EF4A900735158 /* Debug */,
+				8B30832F2C5EF4A900735158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3083302C5EF4A900735158 /* Build configuration list for PBXNativeTarget "DanceRoutineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3083312C5EF4A900735158 /* Debug */,
+				8B3083322C5EF4A900735158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B3082FB2C5EF4A700735158 /* Project object */;
+}

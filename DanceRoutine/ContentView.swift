@@ -16,13 +16,10 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                List {
-                    ForEach(routineManager.routines) { routine in
-                        Text(routine.name)
-                    }
-                    .onDelete(perform: routineManager.deleteRoutine)
+                NavigationLink(destination: SavedRoutinesView().environmentObject(routineManager)) {
+                    Text("View Saved Routines")
                 }
-                .navigationTitle("Saved Routines")
+                .padding()
             }
         }
     }

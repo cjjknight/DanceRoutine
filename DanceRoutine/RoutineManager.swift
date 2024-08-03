@@ -19,13 +19,13 @@ class RoutineManager: ObservableObject {
         saveRoutines()
     }
     
-    private func saveRoutines() {
+    func saveRoutines() {
         if let encoded = try? JSONEncoder().encode(routines) {
             UserDefaults.standard.set(encoded, forKey: routinesKey)
         }
     }
     
-    private func loadRoutines() {
+    func loadRoutines() {
         if let savedData = UserDefaults.standard.data(forKey: routinesKey),
            let decoded = try? JSONDecoder().decode([DanceRoutine].self, from: savedData) {
             routines = decoded

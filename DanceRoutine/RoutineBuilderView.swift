@@ -9,12 +9,19 @@ struct RoutineBuilderView: View {
     ]
     
     @State private var routineSteps: [DanceStep] = []
+    @State private var routineName: String = ""
+    
+    @EnvironmentObject var routineManager: RoutineManager
     
     var body: some View {
         VStack {
             Text("Build Your Dance Routine")
                 .font(.largeTitle)
                 .padding()
+            
+            TextField("Routine Name", text: $routineName)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             
             HStack {
                 List {
@@ -35,6 +42,14 @@ struct RoutineBuilderView: View {
                     .onInsert(of: [UTType.plainText], perform: insertSteps)
                 }
                 .frame(maxWidth: 200)
+            }
+            .padding()
+            
+            Button("Save Routine") {
+                let newRoutine = DanceRoutine(name: routineName, steps: routineSteps)
+                routineManager.saveRoutine(newRoutine)
+                routineName = ""
+                routineSteps = []
             }
             .padding()
         }
@@ -61,6 +76,6 @@ struct RoutineBuilderView: View {
 
 struct RoutineBuilderView_Previews: PreviewProvider {
     static var previews: some View {
-        RoutineBuilderView()
+        RoutineBuilderView().environmentObject(RoutineManager())
     }
 }

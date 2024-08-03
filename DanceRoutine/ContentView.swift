@@ -3,7 +3,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            DanceStepsView()
+            VStack {
+                NavigationLink(destination: DanceStepsView()) {
+                    Text("View Dance Steps")
+                }
+                .padding()
+                
+                NavigationLink(destination: RoutineBuilderView()) {
+                    Text("Build Dance Routine")
+                }
+                .padding()
+            }
         }
     }
 }

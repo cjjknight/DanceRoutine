@@ -17,6 +17,7 @@
 		8B3083272C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083262C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift */; };
 		8B3083342C5EF4B800735158 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083332C5EF4B800735158 /* Models.swift */; };
 		8B3083362C5EF4C300735158 /* DanceStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083352C5EF4C300735158 /* DanceStepsView.swift */; };
+		8B3083382C5EF57100735158 /* RoutineBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083372C5EF57100735158 /* RoutineBuilderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8B3083262C5EF4A900735158 /* DanceRoutineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B3083332C5EF4B800735158 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8B3083352C5EF4C300735158 /* DanceStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceStepsView.swift; sourceTree = "<group>"; };
+		8B3083372C5EF57100735158 /* RoutineBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineBuilderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */,
 				8B3083082C5EF4A700735158 /* ContentView.swift */,
+				8B3083372C5EF57100735158 /* RoutineBuilderView.swift */,
 				8B3083332C5EF4B800735158 /* Models.swift */,
 				8B3083352C5EF4C300735158 /* DanceStepsView.swift */,
 				8B30830A2C5EF4A700735158 /* Item.swift */,
@@ -271,6 +274,7 @@
 				8B3083092C5EF4A700735158 /* ContentView.swift in Sources */,
 				8B30830B2C5EF4A700735158 /* Item.swift in Sources */,
 				8B3083072C5EF4A700735158 /* DanceRoutineApp.swift in Sources */,
+				8B3083382C5EF57100735158 /* RoutineBuilderView.swift in Sources */,
 				8B3083362C5EF4C300735158 /* DanceStepsView.swift in Sources */,
 				8B3083342C5EF4B800735158 /* Models.swift in Sources */,
 			);

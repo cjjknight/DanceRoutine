@@ -1,6 +1,6 @@
 import Foundation
 
-struct DanceStep: Identifiable, Codable {
+struct DanceStep: Identifiable, Codable, Equatable {
     let id = UUID()
     let name: String
     let description: String

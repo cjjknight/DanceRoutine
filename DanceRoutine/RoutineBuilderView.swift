@@ -24,24 +24,41 @@ struct RoutineBuilderView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             HStack {
-                List {
-                    ForEach(steps) { step in
-                        Text(step.name)
-                            .onDrag {
-                                return NSItemProvider(object: step.name as NSString)
-                            }
+                VStack {
+                    Text("Available Steps")
+                        .font(.headline)
+                    
+                    List {
+                        ForEach(steps) { step in
+                            Text(step.name)
+                                .onDrag {
+                                    NSItemProvider(object: step.name as NSString)
+                                }
+                                .onTapGesture(count: 2) {
+                                    addStepToRoutine(step: step)
+                                }
+                        }
                     }
                 }
                 .frame(maxWidth: 200)
                 
-                List {
-                    ForEach(routineSteps) { step in
-                        Text(step.name)
+                VStack {
+                    Text("Routine Steps")
+                        .font(.headline)
+                    
+                    VStack {
+                        List {
+                            ForEach(routineSteps) { step in
+                                Text(step.name)
+                            }
+                            .onMove(perform: moveSteps)
+                            .onInsert(of: [UTType.plainText], perform: insertSteps)
+                        }
+                        .frame(maxWidth: 200)
                     }
-                    .onMove(perform: moveSteps)
-                    .onInsert(of: [UTType.plainText], perform: insertSteps)
+                    .onDrop(of: [UTType.plainText], isTargeted: nil, perform: handleDrop(providers:))
                 }
-                .frame(maxWidth: 200)
+                .frame(maxWidth: .infinity)
             }
             .padding()
             
@@ -71,6 +88,25 @@ struct RoutineBuilderView: View {
                 }
             }
         }
+    }
+    
+    private func handleDrop(providers: [NSItemProvider]) -> Bool {
+        for provider in providers {
+            provider.loadItem(forTypeIdentifier: UTType.plainText.identifier, options: nil) { (data, error) in
+                if let data = data as? Data, let stepName = String(data: data, encoding: .utf8) {
+                    DispatchQueue.main.async {
+                        if let step = steps.first(where: { $0.name == stepName }) {
+                            routineSteps.append(step)
+                        }
+                    }
+                }
+            }
+        }
+        return true
+    }
+    
+    private func addStepToRoutine(step: DanceStep) {
+        routineSteps.append(step)
     }
 }
 

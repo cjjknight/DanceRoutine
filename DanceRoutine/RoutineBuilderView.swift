@@ -8,7 +8,9 @@ struct RoutineBuilderView: View {
         // Add more steps as needed
     ]
     
-    @State private var routineSteps: [DanceStep] = []
+    @State private var routineSteps: [DanceStep] = [
+        DanceStep(name: "Basic Step", description: "The basic step of Quickstep", videoURL: nil)
+    ]
     @State private var routineName: String = ""
     
     @EnvironmentObject var routineManager: RoutineManager
@@ -50,8 +52,12 @@ struct RoutineBuilderView: View {
                         List {
                             ForEach(routineSteps) { step in
                                 Text(step.name)
+                                    .onDrag {
+                                        NSItemProvider(object: step.name as NSString)
+                                    }
                             }
                             .onMove(perform: moveSteps)
+                            .onDelete(perform: deleteStep)
                             .onInsert(of: [UTType.plainText], perform: insertSteps)
                         }
                         .frame(maxWidth: 200)
@@ -66,7 +72,7 @@ struct RoutineBuilderView: View {
                 let newRoutine = DanceRoutine(name: routineName, steps: routineSteps)
                 routineManager.saveRoutine(newRoutine)
                 routineName = ""
-                routineSteps = []
+                routineSteps = [DanceStep(name: "Basic Step", description: "The basic step of Quickstep", videoURL: nil)]
             }
             .padding()
         }
@@ -97,6 +103,9 @@ struct RoutineBuilderView: View {
                     DispatchQueue.main.async {
                         if let step = steps.first(where: { $0.name == stepName }) {
                             routineSteps.append(step)
+                        } else if let step = routineSteps.first(where: { $0.name == stepName }) {
+                            routineSteps.removeAll { $0 == step }
+                            steps.append(step)
                         }
                     }
                 }
@@ -107,6 +116,10 @@ struct RoutineBuilderView: View {
     
     private func addStepToRoutine(step: DanceStep) {
         routineSteps.append(step)
+    }
+    
+    private func deleteStep(at offsets: IndexSet) {
+        routineSteps.remove(atOffsets: offsets)
     }
 }
 

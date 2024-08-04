@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2F10292C5F00BB008BF3DF /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F10282C5F00BB008BF3DF /* RoutineDetailView.swift */; };
 		8B3083072C5EF4A700735158 /* DanceRoutineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */; };
 		8B3083092C5EF4A700735158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083082C5EF4A700735158 /* ContentView.swift */; };
 		8B30830B2C5EF4A700735158 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30830A2C5EF4A700735158 /* Item.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B2F10282C5F00BB008BF3DF /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
 		8B3083032C5EF4A700735158 /* DanceRoutine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceRoutine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRoutineApp.swift; sourceTree = "<group>"; };
 		8B3083082C5EF4A700735158 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				8B3083062C5EF4A700735158 /* DanceRoutineApp.swift */,
 				8B3083082C5EF4A700735158 /* ContentView.swift */,
 				8B3083392C5EF61A00735158 /* RoutineManager.swift */,
+				8B2F10282C5F00BB008BF3DF /* RoutineDetailView.swift */,
 				8B30833B2C5EFB4100735158 /* SavedRoutinesView.swift */,
 				8B30833F2C5EFEB900735158 /* AddNewStepView.swift */,
 				8B3083412C5EFF6800735158 /* EditStepView.swift */,
@@ -286,6 +289,7 @@
 				8B3083422C5EFF6800735158 /* EditStepView.swift in Sources */,
 				8B30833A2C5EF61A00735158 /* RoutineManager.swift in Sources */,
 				8B30833C2C5EFB4100735158 /* SavedRoutinesView.swift in Sources */,
+				8B2F10292C5F00BB008BF3DF /* RoutineDetailView.swift in Sources */,
 				8B3083092C5EF4A700735158 /* ContentView.swift in Sources */,
 				8B30830B2C5EF4A700735158 /* Item.swift in Sources */,
 				8B3083072C5EF4A700735158 /* DanceRoutineApp.swift in Sources */,

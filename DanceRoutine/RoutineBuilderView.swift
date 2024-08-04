@@ -7,6 +7,8 @@ struct RoutineBuilderView: View {
     @State private var isEditing: Bool
     @State private var routineId: UUID?
     @State private var showingAddNewStep = false
+    @State private var showingEditStep = false
+    @State private var selectedStep: DanceStep?
     
     @EnvironmentObject var routineManager: RoutineManager
     @Environment(\.presentationMode) var presentationMode
@@ -50,6 +52,19 @@ struct RoutineBuilderView: View {
                                 }
                                 .onTapGesture(count: 2) {
                                     addStepToRoutine(step: step)
+                                }
+                                .swipeActions {
+                                    Button("Edit") {
+                                        selectedStep = step
+                                        showingEditStep.toggle()
+                                    }
+                                    .tint(.blue)
+                                    
+                                    Button("Delete", role: .destructive) {
+                                        if let index = routineManager.availableSteps.firstIndex(where: { $0.id == step.id }) {
+                                            routineManager.availableSteps.remove(at: index)
+                                        }
+                                    }
                                 }
                         }
                         
@@ -101,6 +116,9 @@ struct RoutineBuilderView: View {
                 presentationMode.wrappedValue.dismiss()
             }
             .padding()
+        }
+        .sheet(item: $selectedStep) { step in
+            EditStepView(step: step).environmentObject(routineManager)
         }
     }
     

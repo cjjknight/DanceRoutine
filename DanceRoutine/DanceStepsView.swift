@@ -3,6 +3,8 @@ import SwiftUI
 struct DanceStepsView: View {
     @EnvironmentObject var routineManager: RoutineManager
     @State private var showingAddNewStep = false
+    @State private var showingEditStep = false
+    @State private var selectedStep: DanceStep?
     
     var body: some View {
         List {
@@ -12,6 +14,19 @@ struct DanceStepsView: View {
                         .font(.headline)
                     Text(step.description)
                         .font(.subheadline)
+                }
+                .swipeActions {
+                    Button("Edit") {
+                        selectedStep = step
+                        showingEditStep.toggle()
+                    }
+                    .tint(.blue)
+                    
+                    Button("Delete", role: .destructive) {
+                        if let index = routineManager.availableSteps.firstIndex(where: { $0.id == step.id }) {
+                            routineManager.availableSteps.remove(at: index)
+                        }
+                    }
                 }
             }
             
@@ -23,6 +38,9 @@ struct DanceStepsView: View {
             }
         }
         .navigationTitle("Dance Steps")
+        .sheet(item: $selectedStep) { step in
+            EditStepView(step: step).environmentObject(routineManager)
+        }
     }
 }
 

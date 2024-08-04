@@ -21,6 +21,7 @@
 		8B30833A2C5EF61A00735158 /* RoutineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083392C5EF61A00735158 /* RoutineManager.swift */; };
 		8B30833C2C5EFB4100735158 /* SavedRoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30833B2C5EFB4100735158 /* SavedRoutinesView.swift */; };
 		8B3083402C5EFEB900735158 /* AddNewStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30833F2C5EFEB900735158 /* AddNewStepView.swift */; };
+		8B3083422C5EFF6800735158 /* EditStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3083412C5EFF6800735158 /* EditStepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8B3083392C5EF61A00735158 /* RoutineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineManager.swift; sourceTree = "<group>"; };
 		8B30833B2C5EFB4100735158 /* SavedRoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoutinesView.swift; sourceTree = "<group>"; };
 		8B30833F2C5EFEB900735158 /* AddNewStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStepView.swift; sourceTree = "<group>"; };
+		8B3083412C5EFF6800735158 /* EditStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				8B3083392C5EF61A00735158 /* RoutineManager.swift */,
 				8B30833B2C5EFB4100735158 /* SavedRoutinesView.swift */,
 				8B30833F2C5EFEB900735158 /* AddNewStepView.swift */,
+				8B3083412C5EFF6800735158 /* EditStepView.swift */,
 				8B3083372C5EF57100735158 /* RoutineBuilderView.swift */,
 				8B3083332C5EF4B800735158 /* Models.swift */,
 				8B3083352C5EF4C300735158 /* DanceStepsView.swift */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3083422C5EFF6800735158 /* EditStepView.swift in Sources */,
 				8B30833A2C5EF61A00735158 /* RoutineManager.swift in Sources */,
 				8B30833C2C5EFB4100735158 /* SavedRoutinesView.swift in Sources */,
 				8B3083092C5EF4A700735158 /* ContentView.swift in Sources */,

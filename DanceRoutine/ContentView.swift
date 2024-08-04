@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: DanceStepsView()) {
+                NavigationLink(destination: DanceStepsView().environmentObject(routineManager)) {
                     Text("View Dance Steps")
                 }
                 .padding()
@@ -21,7 +21,9 @@ struct ContentView: View {
                 }
                 .padding()
             }
+            .navigationTitle("Dance Routine Builder")
         }
+        .environmentObject(routineManager) // Ensure the environment object is available throughout the navigation
     }
 }
 

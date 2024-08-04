@@ -6,6 +6,7 @@ struct RoutineBuilderView: View {
     @State private var routineName: String
     @State private var isEditing: Bool
     @State private var routineId: UUID?
+    @State private var showingAddNewStep = false
     
     @EnvironmentObject var routineManager: RoutineManager
     @Environment(\.presentationMode) var presentationMode
@@ -50,6 +51,13 @@ struct RoutineBuilderView: View {
                                 .onTapGesture(count: 2) {
                                     addStepToRoutine(step: step)
                                 }
+                        }
+                        
+                        Button("Add New Step") {
+                            showingAddNewStep.toggle()
+                        }
+                        .sheet(isPresented: $showingAddNewStep) {
+                            AddNewStepView().environmentObject(routineManager)
                         }
                     }
                 }

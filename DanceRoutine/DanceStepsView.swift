@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DanceStepsView: View {
     @EnvironmentObject var routineManager: RoutineManager
+    @State private var showingAddNewStep = false
     
     var body: some View {
         List {
@@ -12,6 +13,13 @@ struct DanceStepsView: View {
                     Text(step.description)
                         .font(.subheadline)
                 }
+            }
+            
+            Button("Add New Step") {
+                showingAddNewStep.toggle()
+            }
+            .sheet(isPresented: $showingAddNewStep) {
+                AddNewStepView().environmentObject(routineManager)
             }
         }
         .navigationTitle("Dance Steps")

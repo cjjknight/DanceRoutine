@@ -8,16 +8,33 @@ struct RoutineBuilderView: View {
         // Add more steps as needed
     ]
     
-    @State private var routineSteps: [DanceStep] = [
-        DanceStep(name: "Basic Step", description: "The basic step of Quickstep", videoURL: nil)
-    ]
-    @State private var routineName: String = ""
+    @State private var routineSteps: [DanceStep]
+    @State private var routineName: String
+    @State private var isEditing: Bool
+    @State private var routineId: UUID?
     
     @EnvironmentObject var routineManager: RoutineManager
+    @Environment(\.presentationMode) var presentationMode
+    
+    init(routine: DanceRoutine? = nil) {
+        if let routine = routine {
+            _routineName = State(initialValue: routine.name)
+            _routineSteps = State(initialValue: routine.steps)
+            _isEditing = State(initialValue: true)
+            _routineId = State(initialValue: routine.id)
+        } else {
+            _routineName = State(initialValue: "")
+            _routineSteps = State(initialValue: [
+                DanceStep(name: "Basic Step", description: "The basic step of Quickstep", videoURL: nil)
+            ])
+            _isEditing = State(initialValue: false)
+            _routineId = State(initialValue: nil)
+        }
+    }
     
     var body: some View {
         VStack {
-            Text("Build Your Dance Routine")
+            Text(isEditing ? "Edit Dance Routine" : "Build Your Dance Routine")
                 .font(.largeTitle)
                 .padding()
             
@@ -68,11 +85,18 @@ struct RoutineBuilderView: View {
             }
             .padding()
             
-            Button("Save Routine") {
-                let newRoutine = DanceRoutine(name: routineName, steps: routineSteps)
-                routineManager.saveRoutine(newRoutine)
-                routineName = ""
-                routineSteps = [DanceStep(name: "Basic Step", description: "The basic step of Quickstep", videoURL: nil)]
+            Button(isEditing ? "Save Changes" : "Save Routine") {
+                if isEditing {
+                    if let index = routineManager.routines.firstIndex(where: { $0.id == routineId }) {
+                        routineManager.routines[index].name = routineName
+                        routineManager.routines[index].steps = routineSteps
+                    }
+                } else {
+                    let newRoutine = DanceRoutine(name: routineName, steps: routineSteps)
+                    routineManager.saveRoutine(newRoutine)
+                }
+                routineManager.saveRoutines()
+                presentationMode.wrappedValue.dismiss()
             }
             .padding()
         }

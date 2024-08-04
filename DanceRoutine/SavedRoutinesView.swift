@@ -7,7 +7,7 @@ struct SavedRoutinesView: View {
         NavigationView {
             List {
                 ForEach(routineManager.routines) { routine in
-                    NavigationLink(destination: EditRoutineView(routine: routine)) {
+                    NavigationLink(destination: RoutineBuilderView(routine: routine)) {
                         Text(routine.name)
                     }
                 }
